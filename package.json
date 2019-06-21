@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/jdgri/jdgri.me#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "newrelic": "^5.10.0"
   },
   "devDependencies": {
     "pm2": "^3.2.9"
