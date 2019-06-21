@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <load-object domain="avastpoc.akadns.net">
-   <datacenter name="us-va-jdgri.me">
+   <datacenter name="us-east-jdgri.me">
       <resource name="RPM">
          <current-load>50</current-load>
          <target-load>100</target-load>
