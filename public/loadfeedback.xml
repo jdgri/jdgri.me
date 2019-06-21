@@ -1,0 +1,14 @@
+<load-object domain="avastpoc.akadns.net">
+  <datacenter name="us-va-jdgri.me">
+    <resource name="RPM">
+      <current-load>
+        50
+      </current-load>
+      <target-load>
+        100
+      </target-load>
+      <capacity>
+        200
+      </capacity>
+  </datacenter>
+</load-object>
