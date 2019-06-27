@@ -11,13 +11,13 @@ response = requests.get(
 )
 throughput = response.json()['application_hosts'][0]['application_summary']['throughput']
 
-loadfeedback = minidom.parse('../server/public/loadfeedback.xml')
+loadfeedback = minidom.parse('../public/loadfeedback.xml')
 datacenters = loadfeedback.getElementsByTagName('datacenter')
 resources = datacenters[0].getElementsByTagName('resource')
 for resource in resources:
     if resource.attributes['name'].value == 'RPM2':
         resource.getElementsByTagName('current-load')[0].firstChild.data = throughput
 
-f = open('../server/public/loadfeedback.xml', 'w')
+f = open('../public/loadfeedback.xml', 'w')
 loadfeedback.writexml(f)
 f.close()
