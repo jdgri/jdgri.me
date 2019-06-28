@@ -7,8 +7,8 @@
 </resource>
 <resource name="RPM2">
 <current-load>15.3</current-load>
-<target-load>100</target-load>
-<capacity>200</capacity>
+<target-load>25</target-load>
+<capacity>50</capacity>
 </resource>
 </datacenter>
 </load-object>
