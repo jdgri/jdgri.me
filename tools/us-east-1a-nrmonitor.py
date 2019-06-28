@@ -16,7 +16,7 @@ loadfeedback = minidom.parse('/home/ubuntu/current/public/loadfeedback.xml')
 datacenters = loadfeedback.getElementsByTagName('datacenter')
 resources = datacenters[0].getElementsByTagName('resource')
 for resource in resources:
-    if resource.attributes['name'].value == 'RPM2':
+    if resource.attributes['name'].value == 'RPM3':
         resource.getElementsByTagName('current-load')[0].firstChild.data = throughput
 
 f = open('/home/ubuntu/current/public/loadfeedback.xml', 'w')
