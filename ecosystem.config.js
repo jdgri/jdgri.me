@@ -11,6 +11,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:jdgri/jdgri.me.git',
       path: '/home/ubuntu',
+      'pre-deploy': 'git reset --hard',
       'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
     }
   }
