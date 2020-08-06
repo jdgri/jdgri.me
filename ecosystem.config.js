@@ -6,7 +6,7 @@ module.exports = {
   deploy: {
     production: {
       user: 'ubuntu',
-      host: ['18.234.24.238'],
+      host: ['3.85.192.36'],
       key: '~/.ssh/aws/jdgrime.pem',
       ref: 'origin/master',
       repo: 'git@github.com:jdgri/jdgri.me.git',
